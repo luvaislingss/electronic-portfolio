@@ -34,6 +34,9 @@ a:hover {
   font-size: 30px;
   flex-wrap: wrap;
   justify-content: left;
+}
+
+#headshotimg {
   height: 600px;
   width: 500px;
   object-fit: cover;
