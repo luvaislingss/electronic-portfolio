@@ -1,32 +1,20 @@
-let currentSlide = 0;
-const slides = document.querySelectorAll(".slide");
+var slideIndex = [1,1,1];
+    var slideId = ["slide", "slide2", "slide3"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    showSlides(1, 2);
 
-function changeSlide(direction) {
-  slides[currentSlide].classList.remove("active");
-  
-  currentSlide = (currentSlide + direction + slides.length) % slides.length;
-  
-  slides[currentSlide].classList.add("active");
-}
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
 
-let currentSlide = 0;
-const slides = document.querySelectorAll(".slide2");
-
-function changeSlide(direction) {
-  slides[currentSlide].classList.remove("active2");
-  
-  currentSlide = (currentSlide + direction + slides.length) % slides.length;
-  
-  slides[currentSlide].classList.add("active2");
-}
-
-let currentSlide = 0;
-const slides = document.querySelectorAll(".slide3");
-
-function changeSlide(direction) {
-  slides[currentSlide].classList.remove("active3");
-  
-  currentSlide = (currentSlide + direction + slides.length) % slides.length;
-  
-  slides[currentSlide].classList.add("active3");
-}
+    function showSlides(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 2) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";  
+    }
