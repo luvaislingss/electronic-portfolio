@@ -131,10 +131,13 @@ h3 {
 .slide {
   display: none; /* Hide all slides by default */
   width: 100%;
+  height: auto;
 }
 
 .slide.active {
   display: block; /* Only show the active slide */
+  width: 100%;
+  height: auto;
 }
 
 img {
