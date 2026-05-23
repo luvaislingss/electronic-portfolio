@@ -131,9 +131,10 @@ img {
   /* repeat(4, 1fr) creates 4 columns of equal width */
   grid-template-columns: repeat(4, 1fr); 
   /* repeat(3, 100px) creates 3 rows with 100px height each */
-  grid-template-rows: repeat(3, 100px); 
+  grid-template-rows: repeat(3, 1fr); 
   /* Optional: Adds space between the grid cells */
-  margin:10px;
+  gap: 10px;
+  margin: 20px;
 }
 
 /* Optional: Basic styling for the items to make them visible */
