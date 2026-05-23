@@ -1,11 +1,11 @@
 body {
-  background-color: black;
+    background-color: black;
 }
 
 nav {
-  font-family: Futura;
-  padding: 20px;
-  background-color: #037c6e;
+    font-family: Futura;
+    padding: 20px;
+    background-color: #037c6e;
 }
 
 .container {
@@ -28,16 +28,12 @@ a:hover {
   color: black;
 }
 
-.headshot {
-  font-family: Futura;
+.headshot {  font-family: Futura;
   display: flex;
   text-align: center;
   font-size: 30px;
   flex-wrap: wrap;
   justify-content: left;
-}
-
-img {
   height: 500px;
   width: 400px;
   object-fit: cover;
@@ -54,6 +50,8 @@ img {
 
 p {
   color: white;
+  font-family: futura;
+  font-size: 25px;
 }
 
 footer {
@@ -96,3 +94,61 @@ h1 {
   color: white;
   font-family: futura;
 }
+
+.column {
+  flex: 1;       /* Makes all 3 columns equal width */
+  padding: 10px;
+}
+
+.column img {
+  width: 100%; /* Makes image fill the column width */
+  height: auto; /* Keeps image proportions correct */
+  display: block;
+}
+
+.column iframe {
+  width: 100%; /* Makes image fill the column width */
+  height: auto; /* Keeps image proportions correct */
+  display: block;
+}
+
+h3 {
+  color: white;
+  font-family: futura;
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none; /* Hide all slides by default */
+  width: 100%;
+}
+
+.slide.active {
+  display: block; /* Only show the active slide */
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+.next { right: 0; }
+.prev { left: 0; }
