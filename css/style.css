@@ -121,40 +121,25 @@ h3 {
   text-align: center;
 }
 
-.slider {
-  position: relative;
-  max-width: 800px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.slide {
-  display: none; /* Hide all slides by default */
-  width: 100%;
-  height: auto;
-}
-
-.slide.active {
-  display: block; /* Only show the active slide */
-  width: 100%;
-  height: auto;
-}
-
 img {
   width: 100%;
   height: auto;
 }
 
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-  padding: 10px;
-  border: none;
+.slider {
+  display: grid;
+  /* repeat(4, 1fr) creates 4 columns of equal width */
+  grid-template-columns: repeat(4, 1fr); 
+  /* repeat(3, 100px) creates 3 rows with 100px height each */
+  grid-template-rows: repeat(3, 100px); 
+  /* Optional: Adds space between the grid cells */
+  gap: 10px; 
 }
 
-.next { right: 0; }
-.prev { left: 0; }
+/* Optional: Basic styling for the items to make them visible */
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
