@@ -154,7 +154,10 @@ img {
   display: block;
   border: none;
 }
-
+.column iframe.google-doc {
+  height: 500px; /* match the visual height of the drawing image */
+  aspect-ratio: auto;
+}
 /* Ensure PDF iframes scale to the container and don't force overflow */
 .slide iframe[src$=".pdf"] {
   width: 100%;
