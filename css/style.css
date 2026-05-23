@@ -133,7 +133,7 @@ img {
   /* repeat(3, 100px) creates 3 rows with 100px height each */
   grid-template-rows: repeat(3, 100px); 
   /* Optional: Adds space between the grid cells */
-  gap: 10px; 
+  margin:10px;
 }
 
 /* Optional: Basic styling for the items to make them visible */
