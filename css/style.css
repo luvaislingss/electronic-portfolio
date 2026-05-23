@@ -119,7 +119,7 @@ h3 {
   color: white;
   font-family: futura;
   text-align: center;
-
+   grid-column: 1 / -1; /* Spans across all 3 columns */
 }
 
 img {
