@@ -119,16 +119,12 @@ h3 {
   color: white;
   font-family: futura;
   text-align: center;
+
 }
 
 img {
   width: 100%;
   height: auto;
-}
-
-.title {
-  grid-area: header;
-  justify-self: center;
 }
 
 .slider {
