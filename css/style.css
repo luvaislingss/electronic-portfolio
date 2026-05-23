@@ -111,7 +111,7 @@ h1 {
 
 .column iframe {
   width: 100%; /* Makes image fill the column width */
-  height: auto; /* Keeps image proportions correct */
+  height: 100%; /* Keeps image proportions correct */
   display: block;
 }
 
